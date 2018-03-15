@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'Augment' do
+    use_frameworks!
+
+    # Pods for Augment
+    pod 'ARCL'
+    pod 'RealmSwift'
+    pod 'Alamofire', '~> 4.5'
+    pod 'OAuthSwift', '~> 1.2.0'
+    pod 'SwiftyJSON'
+    pod 'SnapKit', '~> 4.0.0'
+
+end

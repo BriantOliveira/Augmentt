@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C0u-Gu-dky">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect Accounts View Controller-->
+        <scene sceneID="5jo-dF-dhS">
+            <objects>
+                <viewController storyboardIdentifier="ConnectAccountsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C0u-Gu-dky" customClass="ConnectAccountsViewController" customModule="Augment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bc-RI-X9q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect-accounts-screen" translatesAutoresizingMaskIntoConstraints="NO" id="UIM-Iq-4ye">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSf-6e-Y1w">
+                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="677"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.043137254899999998" blue="0.50588235290000005" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="connectLyftAccount:" destination="C0u-Gu-dky" eventType="touchUpInside" id="7OZ-mU-7uY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R4-l5-HwW">
+                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="690"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectUberAccount:" destination="C0u-Gu-dky" eventType="touchUpInside" id="UDi-EJ-a6a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UIM-Iq-4ye" firstAttribute="bottom" secondItem="Dit-OA-T8z" secondAttribute="bottom" id="14d-bB-6h8"/>
+                            <constraint firstItem="UIM-Iq-4ye" firstAttribute="top" secondItem="8bc-RI-X9q" secondAttribute="top" id="2Nn-le-oQp"/>
+                            <constraint firstItem="dSf-6e-Y1w" firstAttribute="width" secondItem="8bc-RI-X9q" secondAttribute="width" multiplier="0.5" id="5C9-PG-avb"/>
+                            <constraint firstItem="6R4-l5-HwW" firstAttribute="centerY" secondItem="Dit-OA-T8z" secondAttribute="centerY" constant="1.5" id="9bO-CC-dQs"/>
+                            <constraint firstItem="UIM-Iq-4ye" firstAttribute="leading" secondItem="Dit-OA-T8z" secondAttribute="leading" id="Bex-RK-ThV"/>
+                            <constraint firstItem="dSf-6e-Y1w" firstAttribute="leading" secondItem="Dit-OA-T8z" secondAttribute="leading" id="JXa-An-ZB0"/>
+                            <constraint firstItem="6R4-l5-HwW" firstAttribute="width" secondItem="8bc-RI-X9q" secondAttribute="width" multiplier="0.5" id="MYi-IW-Ebg"/>
+                            <constraint firstItem="dSf-6e-Y1w" firstAttribute="centerY" secondItem="Dit-OA-T8z" secondAttribute="centerY" constant="-5" id="Shc-iF-SM6"/>
+                            <constraint firstItem="dSf-6e-Y1w" firstAttribute="height" secondItem="8bc-RI-X9q" secondAttribute="height" constant="10" id="UFv-Ml-HiQ"/>
+                            <constraint firstItem="UIM-Iq-4ye" firstAttribute="trailing" secondItem="Dit-OA-T8z" secondAttribute="trailing" id="s3h-tD-gfc"/>
+                            <constraint firstItem="6R4-l5-HwW" firstAttribute="trailing" secondItem="Dit-OA-T8z" secondAttribute="trailing" id="u2f-2O-zSa"/>
+                            <constraint firstItem="6R4-l5-HwW" firstAttribute="height" secondItem="8bc-RI-X9q" secondAttribute="height" constant="23" id="ypL-k2-JOa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dit-OA-T8z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7g-xD-L1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="-328.78560719640183"/>
+        </scene>
+        <!--Uber View Controller-->
+        <scene sceneID="Nd2-fR-Z6S">
+            <objects>
+                <viewController storyboardIdentifier="UberViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GdM-Xs-Q8c" customClass="UberViewController" customModule="Augment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XSU-ng-YlZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect-uber-screen" translatesAutoresizingMaskIntoConstraints="NO" id="SVR-kO-pZx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ki5-gR-pQA">
+                                <rect key="frame" x="-0.5" y="507" width="375" height="80"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="connectLyftAccount:" destination="buA-Po-Hxy" eventType="touchUpInside" id="neZ-YX-5Bh"/>
+                                    <action selector="connectUberAccount:" destination="GdM-Xs-Q8c" eventType="touchUpInside" id="GFM-9z-D9R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCL-QH-hl0">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="cancelConnectUberAccount:" destination="GdM-Xs-Q8c" eventType="touchUpInside" id="W3Z-K5-6gP"/>
+                                    <action selector="skipConnectLyftAccount:" destination="buA-Po-Hxy" eventType="touchUpInside" id="Mvt-Uf-7ue"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eCL-QH-hl0" firstAttribute="height" secondItem="XSU-ng-YlZ" secondAttribute="height" multiplier="80/667" id="1ro-Vj-rbV"/>
+                            <constraint firstItem="SVR-kO-pZx" firstAttribute="trailing" secondItem="GPs-6F-lfO" secondAttribute="trailing" id="2Hq-Q7-K1f"/>
+                            <constraint firstItem="eCL-QH-hl0" firstAttribute="bottom" secondItem="GPs-6F-lfO" secondAttribute="bottom" id="3W4-FX-ZEJ"/>
+                            <constraint firstItem="ki5-gR-pQA" firstAttribute="centerX" secondItem="GPs-6F-lfO" secondAttribute="centerX" id="B8a-GM-lur"/>
+                            <constraint firstItem="eCL-QH-hl0" firstAttribute="width" secondItem="XSU-ng-YlZ" secondAttribute="width" id="DoW-Di-k5T"/>
+                            <constraint firstItem="ki5-gR-pQA" firstAttribute="height" secondItem="eCL-QH-hl0" secondAttribute="height" id="RpW-5M-aB6"/>
+                            <constraint firstItem="SVR-kO-pZx" firstAttribute="leading" secondItem="GPs-6F-lfO" secondAttribute="leading" id="bZw-oy-Zu7"/>
+                            <constraint firstItem="SVR-kO-pZx" firstAttribute="bottom" secondItem="GPs-6F-lfO" secondAttribute="bottom" id="f1b-AT-oTI"/>
+                            <constraint firstItem="ki5-gR-pQA" firstAttribute="width" secondItem="XSU-ng-YlZ" secondAttribute="width" id="ggY-J5-XfX"/>
+                            <constraint firstItem="eCL-QH-hl0" firstAttribute="centerX" secondItem="GPs-6F-lfO" secondAttribute="centerX" id="s6H-Mv-di5"/>
+                            <constraint firstItem="eCL-QH-hl0" firstAttribute="top" secondItem="ki5-gR-pQA" secondAttribute="bottom" id="svp-fG-bno"/>
+                            <constraint firstItem="SVR-kO-pZx" firstAttribute="top" secondItem="XSU-ng-YlZ" secondAttribute="top" id="uef-0s-2RP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GPs-6F-lfO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXA-9n-Xis" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445.60000000000002" y="5.8470764617691158"/>
+        </scene>
+        <!--Enable Camera View Controller-->
+        <scene sceneID="zCa-Be-ERM">
+            <objects>
+                <viewController storyboardIdentifier="EnableCameraViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xsS-Tb-UTt" customClass="EnableCameraViewController" customModule="Augment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VxN-aU-cy7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enable-camera-screen" translatesAutoresizingMaskIntoConstraints="NO" id="8ju-4m-f0m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txj-24-6de">
+                                <rect key="frame" x="0.0" y="507" width="375" height="80"/>
+                                <connections>
+                                    <action selector="enableCamera:" destination="xsS-Tb-UTt" eventType="touchUpInside" id="VLe-nx-hK3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Txj-24-6de" firstAttribute="width" secondItem="VxN-aU-cy7" secondAttribute="width" id="30w-2i-fiK"/>
+                            <constraint firstItem="Txj-24-6de" firstAttribute="height" secondItem="VxN-aU-cy7" secondAttribute="height" multiplier="80/667" id="3AO-WJ-xqP"/>
+                            <constraint firstItem="WWi-jn-rDd" firstAttribute="bottom" secondItem="Txj-24-6de" secondAttribute="bottom" constant="80" id="Exy-MN-Tk7"/>
+                            <constraint firstItem="8ju-4m-f0m" firstAttribute="trailing" secondItem="WWi-jn-rDd" secondAttribute="trailing" id="YNa-h0-oeI"/>
+                            <constraint firstItem="8ju-4m-f0m" firstAttribute="top" secondItem="VxN-aU-cy7" secondAttribute="top" id="ZDW-dL-PSL"/>
+                            <constraint firstItem="8ju-4m-f0m" firstAttribute="leading" secondItem="WWi-jn-rDd" secondAttribute="leading" id="efh-bA-JcQ"/>
+                            <constraint firstItem="8ju-4m-f0m" firstAttribute="bottom" secondItem="WWi-jn-rDd" secondAttribute="bottom" id="hvM-7N-Wfz"/>
+                            <constraint firstItem="Txj-24-6de" firstAttribute="centerX" secondItem="WWi-jn-rDd" secondAttribute="centerX" id="xmf-Iv-PWO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WWi-jn-rDd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQZ-1z-4dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="-329.68515742128938"/>
+        </scene>
+        <!--Lyft View Controller-->
+        <scene sceneID="ffV-OW-jUK">
+            <objects>
+                <viewController storyboardIdentifier="LyftViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="buA-Po-Hxy" customClass="LyftViewController" customModule="Augment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YdH-cT-fi0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect-lyft-screen" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-BY-JXa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lut-4R-zfu">
+                                <rect key="frame" x="0.0" y="507.5" width="375" height="79.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="connectLyftAccount:" destination="buA-Po-Hxy" eventType="touchUpInside" id="GRX-8Z-6L7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdr-GP-BX0">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="skipConnectLyftAccount:" destination="buA-Po-Hxy" eventType="touchUpInside" id="zWI-bo-wtl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mdr-GP-BX0" firstAttribute="width" secondItem="YdH-cT-fi0" secondAttribute="width" id="30K-cJ-3xS"/>
+                            <constraint firstItem="tq4-BY-JXa" firstAttribute="leading" secondItem="2er-AN-R38" secondAttribute="leading" id="4eh-Uh-T9S"/>
+                            <constraint firstItem="tq4-BY-JXa" firstAttribute="trailing" secondItem="2er-AN-R38" secondAttribute="trailing" id="6kc-b8-sVV"/>
+                            <constraint firstItem="Mdr-GP-BX0" firstAttribute="bottom" secondItem="2er-AN-R38" secondAttribute="bottom" id="TlF-i7-cSx"/>
+                            <constraint firstItem="Lut-4R-zfu" firstAttribute="width" secondItem="YdH-cT-fi0" secondAttribute="width" id="VBa-3R-WxL"/>
+                            <constraint firstItem="tq4-BY-JXa" firstAttribute="top" secondItem="YdH-cT-fi0" secondAttribute="top" id="YUa-8m-bT9"/>
+                            <constraint firstItem="tq4-BY-JXa" firstAttribute="bottom" secondItem="2er-AN-R38" secondAttribute="bottom" id="b30-g3-UTH"/>
+                            <constraint firstItem="Mdr-GP-BX0" firstAttribute="centerX" secondItem="2er-AN-R38" secondAttribute="centerX" id="b5g-x3-34e"/>
+                            <constraint firstItem="Mdr-GP-BX0" firstAttribute="top" secondItem="Lut-4R-zfu" secondAttribute="bottom" id="lj7-zs-c5o"/>
+                            <constraint firstItem="Mdr-GP-BX0" firstAttribute="height" secondItem="YdH-cT-fi0" secondAttribute="height" multiplier="80/667" id="ra5-28-REy"/>
+                            <constraint firstItem="Lut-4R-zfu" firstAttribute="height" secondItem="Mdr-GP-BX0" secondAttribute="height" id="wBR-gj-8c6"/>
+                            <constraint firstItem="Lut-4R-zfu" firstAttribute="centerX" secondItem="2er-AN-R38" secondAttribute="centerX" id="wRy-39-Z7h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2er-AN-R38"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sej-70-Vbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445.60000000000002" y="-652.62368815592208"/>
+        </scene>
+        <!--Enable Location View Controller-->
+        <scene sceneID="Kva-OJ-l4j">
+            <objects>
+                <viewController storyboardIdentifier="EnableLocationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SH7-fd-RyF" customClass="EnableLocationViewController" customModule="Augment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hYc-tc-fvP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enable-location-screen" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-oD-7pO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYa-1m-P2M">
+                                <rect key="frame" x="0.0" y="507" width="375" height="80"/>
+                                <connections>
+                                    <action selector="enableLocation:" destination="SH7-fd-RyF" eventType="touchUpInside" id="Kac-L3-zTx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yhW-oD-7pO" firstAttribute="leading" secondItem="QCk-Qd-tkg" secondAttribute="leading" id="1WS-fu-m9b"/>
+                            <constraint firstItem="QCk-Qd-tkg" firstAttribute="bottom" secondItem="SYa-1m-P2M" secondAttribute="bottom" constant="80" id="E3U-Bb-ct9"/>
+                            <constraint firstItem="yhW-oD-7pO" firstAttribute="trailing" secondItem="QCk-Qd-tkg" secondAttribute="trailing" id="Hu9-by-rSO"/>
+                            <constraint firstItem="SYa-1m-P2M" firstAttribute="centerX" secondItem="QCk-Qd-tkg" secondAttribute="centerX" id="IXT-1k-AwZ"/>
+                            <constraint firstItem="yhW-oD-7pO" firstAttribute="top" secondItem="hYc-tc-fvP" secondAttribute="top" id="PTZ-Ux-SaC"/>
+                            <constraint firstItem="SYa-1m-P2M" firstAttribute="height" secondItem="hYc-tc-fvP" secondAttribute="height" multiplier="80/667" id="XLk-Us-cWC"/>
+                            <constraint firstItem="SYa-1m-P2M" firstAttribute="width" secondItem="hYc-tc-fvP" secondAttribute="width" id="boM-kf-GZG"/>
+                            <constraint firstItem="yhW-oD-7pO" firstAttribute="bottom" secondItem="QCk-Qd-tkg" secondAttribute="bottom" id="fXu-7A-c7f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QCk-Qd-tkg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbs-du-Ec2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.5999999999999" y="-330.58470764617692"/>
+        </scene>
+        <!--Permission Denied View Controller-->
+        <scene sceneID="ugz-Te-cwB">
+            <objects>
+                <viewController storyboardIdentifier="PermissionDeniedViewController" id="5KH-Pw-fXk" customClass="PermissionDeniedViewController" customModule="Augment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDU-Ah-wtw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perm-denied-screen" translatesAutoresizingMaskIntoConstraints="NO" id="YlC-pL-hYm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YlC-pL-hYm" firstAttribute="leading" secondItem="fbd-V6-v27" secondAttribute="leading" id="c8C-ak-elq"/>
+                            <constraint firstItem="YlC-pL-hYm" firstAttribute="trailing" secondItem="fbd-V6-v27" secondAttribute="trailing" id="lvH-HE-FHO"/>
+                            <constraint firstItem="YlC-pL-hYm" firstAttribute="bottom" secondItem="fbd-V6-v27" secondAttribute="bottom" id="tjJ-Pp-ocT"/>
+                            <constraint firstItem="YlC-pL-hYm" firstAttribute="top" secondItem="BDU-Ah-wtw" secondAttribute="top" id="yz9-fp-e2c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fbd-V6-v27"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePq-y4-MhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="325.18740629685158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="connect-accounts-screen" width="375" height="667"/>
+        <image name="connect-lyft-screen" width="375" height="667"/>
+        <image name="connect-uber-screen" width="375" height="667"/>
+        <image name="enable-camera-screen" width="375" height="667"/>
+        <image name="enable-location-screen" width="375" height="667"/>
+        <image name="perm-denied-screen" width="375" height="667"/>
+    </resources>
+</document>

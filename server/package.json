@@ -1,0 +1,45 @@
+{
+  "name": "augment",
+  "version": "1.0.0",
+  "description": "Lyft AI ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/nodemon/bin/nodemon.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meeshbhoombah/Augment.git"
+  },
+  "author": "Rohan Mishra, Elliot Oliveira, Sky Xu, Willie Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meeshbhoombah/Augment/issues"
+  },
+  "homepage": "https://github.com/Meeshbhoombah/Augment#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.1.0",
+    "mailgun-js": "^0.13.1",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.10.8",
+    "node-lyft": "^1.0.3",
+    "nodemon": "^1.12.1",
+    "path": "^0.12.7",
+    "popper.js": "^1.12.6",
+    "querystring": "^0.2.0",
+    "request": "^2.83.0",
+    "serve-favicon": "^2.4.5",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0",
+    "webpack-config": "^7.5.0"
+  }
+}

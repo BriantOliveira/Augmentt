@@ -1,0 +1,70 @@
+<style>
+    .card , card-register {
+        background-color: #000;
+    }
+</style>
+<!--NAVAGATION BAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
+    <div class="container">
+        <div class="navbar-translate">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Augment</a>
+            </div>
+            <!--SLIDE NAV-->
+            <button style="color: black" class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#about" data-scroll="true" href="javascript:void(0)" style="color: #FFFFFF">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#contact" data-scroll="true" href="javascript:void(0)" style="color: #FFFFFF">Contact us</a>
+                </li>
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#" data-scroll="true" href="javascript:void(0)" style="color: #FFFFFF">Login</a>-->
+                <!--</li>-->
+                <li class="nav-item">
+                    <a class="btn btn-round btn-primary" href="/signup">
+                        <i class="nc-icon nc-cart-primary"></i> Sign Up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('https://static.pexels.com/photos/445989/pexels-photo-445989.jpeg');">
+        <div class="filter"></div>
+        <div class="container">
+            <div class="row" id="login">
+                <div class="col-md-4 col-sm-6 ml-auto mr-auto">
+                    <div class="card card-register" style="color: #fffff; background-color: transparent;">
+                        <h3 class="card-title" style="font-family: Montserrat; font-weight: 600; font-size: 14px;-webkit-font-smoothing: antialiased; text-transform: uppercase; color: #ffffff">Welcome to Augment</h3>
+                        <form class="register-form" >
+                            <label>Email</label>
+                            <input type="email" class="form-control no-border" placeholder="Email">
+
+                            <label>Password</label>
+                            <input type="password" class="form-control no-border" placeholder="Password">
+                            <button class="btn btn-danger btn-block btn-round">Register</button>
+                        </form>
+                        <div class="forgot">
+                            <a href="/#contact" class="btn btn-link btn-danger" style="color: #ffffff">Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-footer text-center">
+                <h6>&copy; <script>document.write(new Date().getFullYear())</script>, made in San Francisco</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>

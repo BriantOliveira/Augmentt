@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.5.1)
+  - ARCL (1.0.1)
+  - OAuthSwift (1.2.0)
+  - Realm (3.0.0):
+    - Realm/Headers (= 3.0.0)
+  - Realm/Headers (3.0.0)
+  - RealmSwift (3.0.0):
+    - Realm (= 3.0.0)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - ARCL
+  - OAuthSwift (~> 1.2.0)
+  - RealmSwift
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  ARCL: 193b108d6fd5277ce742be3af92ccf81bbdd2f3b
+  OAuthSwift: 7fd6855b8e4d58eb5a30d156ea9bed7a8aecd1ca
+  Realm: dec0de73be8c57506e39db72694d513c189493b3
+  RealmSwift: 44a7090b16d1b22a406c6bf129bdd602db1bbecc
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: f011dafbdece3673334d716a290b6b99a1f16da9
+
+COCOAPODS: 1.2.1
